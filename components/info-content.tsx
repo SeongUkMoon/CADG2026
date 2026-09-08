@@ -85,7 +85,7 @@ export default function InfoContent() {
             <dl className="info-list">
               <div><dt>Taxi fare</dt><dd>Approximately KRW 55,000–70,000</dd></div>
               <div><dt>Car service</dt><dd>Approximately KRW 75,000–95,000</dd></div>
-              <div><dt>Travel time</dt><dd>Approximately 51 minutes</dd></div>
+              <div><dt>Travel time</dt><dd>Approximately 1 hour</dd></div>
             </dl>
           </article>
         </div>
