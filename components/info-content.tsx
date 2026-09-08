@@ -76,7 +76,7 @@ export default function InfoContent() {
               </div>
               <div><dt>Route 2</dt><dd>AREX → Hongik Univ. Station → Line 2 → Seoul National Univ. Station (Exit 3) → Bus stop → 5511 (Green Bus) → Get off the Research Institute of Advanced Materials → Global Education Center for Engineers</dd></div>
               <div><dt>Route 3</dt><dd>AREX → Hongik Univ. Station → Line 2 → Nakseongdae Station (Exit 4) → Turn left past exit for bus → Gwanak 02-1 (Green Bus) (via Hoam Faculty House) → Get off the Research Institute of Advanced Materials → Global Education Center for Engineers</dd></div>
-              <div><dt>Duration</dt><dd>Approximately 1 hour 43 minutes</dd></div>
+              <div><dt>Duration</dt><dd>Approximately 2 hours</dd></div>
               <div><dt>Fare</dt><dd>KRW 5,500–7,500</dd></div>
             </dl>
           </article>
