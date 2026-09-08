@@ -119,6 +119,9 @@ a:hover { color: var(--cadg-blue-dark); }
 .info-list > div:last-child { border-bottom: 0; }
 .info-list dt { color: var(--cadg-ink); font-weight: 600; }
 .info-list dd { margin: 0; }
+.info-list > .recommended-route { margin-inline: -10px; padding-inline: 10px; border-radius: 4px; background: #e8eefc; }
+.recommended-route dt { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+.recommended-badge { display: inline-flex; align-items: center; padding: 2px 7px; border-radius: 999px; background: var(--cadg-blue); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .04em; line-height: 1.5; text-transform: uppercase; }
 .inline-link { margin-top: 20px !important; }
 
 .accommodation-table tbody th { width: 28%; }

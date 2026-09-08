@@ -57,7 +57,10 @@ export default function InfoContent() {
           <article>
             <h4><Bus aria-hidden="true" /> Airport Limousine Bus No. 6017</h4>
             <dl className="info-list">
-              <div><dt>Route</dt><dd>Incheon Airport Terminal 1 → Hoam Faculty House</dd></div>
+              <div className="recommended-route">
+                <dt>Route <span className="recommended-badge">Recommended</span></dt>
+                <dd>Incheon Airport Terminal 1 → Hoam Faculty House → Gwanak 02-1 (Green Bus) → Get off the Research Institute of Advanced Materials → Global Education Center for Engineers</dd>
+              </div>
               <div><dt>Interval</dt><dd>Every 30 minutes</dd></div>
               <div><dt>Duration</dt><dd>85–90 minutes</dd></div>
               <div><dt>Fare</dt><dd>KRW 16,000–17,500</dd></div>
@@ -67,7 +70,12 @@ export default function InfoContent() {
           <article>
             <h4><Train aria-hidden="true" /> AREX + Subway + Bus</h4>
             <dl className="info-list">
-              <div><dt>Route</dt><dd>AREX → Hongik Univ. Station → Line 2 → Nakseongdae Station (Exit 4) → Turn left past exit for bus →Gwanak 02-1 (Green Bus) → Hoam Faculty House</dd></div>
+              <div className="recommended-route">
+                <dt>Route 1 <span className="recommended-badge">Recommended</span></dt>
+                <dd>AREX → Hongik Univ. Station → Line 2 → Seoul National Univ. Station (Exit 3) → Bus stop → 5513 (Green Bus) → Get off the entrance to Engineering College → Global Education Center for Engineers</dd>
+              </div>
+              <div><dt>Route 2</dt><dd>AREX → Hongik Univ. Station → Line 2 → Seoul National Univ. Station (Exit 3) → Bus stop → 5511 (Green Bus) → Get off the Research Institute of Advanced Materials → Global Education Center for Engineers</dd></div>
+              <div><dt>Route 3</dt><dd>AREX → Hongik Univ. Station → Line 2 → Nakseongdae Station (Exit 4) → Turn left past exit for bus → Gwanak 02-1 (Green Bus) (via Hoam Faculty House) → Get off the Research Institute of Advanced Materials → Global Education Center for Engineers</dd></div>
               <div><dt>Duration</dt><dd>Approximately 1 hour 43 minutes</dd></div>
               <div><dt>Fare</dt><dd>KRW 5,500–7,500</dd></div>
             </dl>
