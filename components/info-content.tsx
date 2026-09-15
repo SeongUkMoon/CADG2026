@@ -121,7 +121,7 @@ export default function InfoContent() {
           <table className="fee-table hotel-table">
             <thead><tr><th scope="col">Hotel</th><th scope="col">Rating</th><th scope="col">Access</th><th scope="col">Estimated Rate / Night</th><th scope="col">Reservation</th></tr></thead>
             <tbody>
-              <tr><th scope="row">Hoam Faculty House</th><td>Guest house</td><td>On campus</td><td>KRW 71,500–82,500</td><td><a href="https://snuhoam.co.kr/stay/" {...external}>Book <ExternalLink size={14} aria-hidden="true" /></a></td></tr>
+              <tr><th scope="row">Hoam Faculty House</th><td>Guest house</td><td>On campus</td><td>KRW 121,000–148,500</td><td><a href="https://snuhoam.co.kr/stay/" {...external}>Book <ExternalLink size={14} aria-hidden="true" /></a></td></tr>
               <tr><th scope="row">Hotel the Designers Seoul National University</th><td>3 star</td><td>17 min by bus</td><td>KRW 120,000–150,000</td><td><a href="https://www.booking.com/searchresults.html?ss=Hotel%20the%20Designers%20Seoul%20National%20University" {...external}>Book <ExternalLink size={14} aria-hidden="true" /></a></td></tr>
               <tr><th scope="row">Lotte City Hotel Guro</th><td>3 star</td><td>20–25 min by taxi</td><td>KRW 140,000–200,000</td><td><a href="https://www.booking.com/searchresults.html?ss=Lotte%20City%20Hotel%20Guro" {...external}>Book <ExternalLink size={14} aria-hidden="true" /></a></td></tr>
               <tr><th scope="row">Shilla Stay Guro</th><td>3 star</td><td>20–25 min by taxi</td><td>KRW 150,000–200,000</td><td><a href="https://www.booking.com/searchresults.html?ss=Shilla%20Stay%20Guro" {...external}>Book <ExternalLink size={14} aria-hidden="true" /></a></td></tr>
