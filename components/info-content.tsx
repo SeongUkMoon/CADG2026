@@ -39,7 +39,13 @@ export default function InfoContent() {
           <article className="feature-card"><BookOpen aria-hidden="true" /><h3>Academic &amp; Cultural Hub</h3><p>The main campus brings together 14 colleges, major research facilities, libraries, museums, and cultural spaces.</p></article>
         </div>
         <figure className="wide-figure map-figure">
-          <img src={withSiteBasePath('/images/venue-map-optimized.png')} alt="Map showing Seoul National University and nearby transit" />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357b612cd0bcacd3%3A0xa158f76e8ef37c91!2z6riA66Gc67KM6rO17ZWZ6rWQ7Jyh7IS87YSwIOy7qOuypOyFmA!5e0!3m2!1sko!2skr!4v1789452347573!5m2!1sko!2skr"
+            title="Google Map showing the Global Education Center for Engineers"
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="strict-origin-when-cross-origin"
+          />
           <figcaption>Venue location and surrounding area</figcaption>
         </figure>
         <ul className="detail-list link-list">
