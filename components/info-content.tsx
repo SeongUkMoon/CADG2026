@@ -106,6 +106,7 @@ export default function InfoContent() {
           <li><strong>Bus:</strong> Airport bus 6017 and local buses Gwanak 02-1, Gwanak 02-2, 5511, 5513, 5516.</li>
           <li><strong>Taxi:</strong> Kakao T is recommended and offers an English interface. Uber is available in limited areas.</li>
           <li><strong>Map apps:</strong> <a href="https://naver.me/FtTxWBu5" {...external}>Naver Map</a> and <a href="https://kko.to/9KgYXPsnMt" {...external}>KakaoMap</a>.</li>
+          <li><strong>Detailed guides:</strong> <a href="https://en.snu.ac.kr/about/campus/gwanak/transportation" {...external}>Public transportation</a> and <a href="https://en.snu.ac.kr/about/campus/gwanak/shuttles" {...external}>campus shuttle buses</a>.</li>
         </ul>
       </section>
 
