@@ -111,8 +111,8 @@ export default function InfoContent() {
 
       {/* ================================================================
           TODO: ACCOMMODATION
-          Replace every room rate, availability note, contact, reservation
-          address, and form link with CAD/Graphics 2026 information.
+          Replace hotel rates, availability notes, contact details, and
+          reservation links with final CAD/Graphics 2026 information.
           ================================================================ */}
       <section className="content-block" id="accommodation">
         <h2>Accommodation</h2>
@@ -122,17 +122,7 @@ export default function InfoContent() {
           <img src={withSiteBasePath('/images/hoam_faculty_house.webp')} alt="Guest room at Hoam Faculty House" />
           <figcaption>Hoam Faculty House guest accommodation</figcaption>
         </figure>
-        <div className="table-scroll" role="region" aria-label="Hoam Faculty House room rates" tabIndex={0}>
-          <table className="fee-table accommodation-table">
-            <thead><tr><th scope="col">Room Type</th><th scope="col">Rack Rate</th><th scope="col">Special Rate</th><th scope="col">Included</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Twin Room<span>2 single beds</span></th><td>KRW 143,000</td><td>KRW 71,500</td><td>Free Wi-Fi</td></tr>
-              <tr><th scope="row">Triple Room<span>1 double + 1 single</span></th><td>KRW 165,000</td><td>KRW 82,500</td><td>Free Wi-Fi</td></tr>
-            </tbody>
-          </table>
-        </div>
         <div className="policy-grid">
-          <article><h4>Operation Guide</h4><ul><li>Check-in from 15:00</li><li>Check-out by 11:00</li><li>No cooking or smoking in rooms</li></ul></article>
           <article><h4>Availability</h4><p>Approximately 40 rooms are available. Reservations may close early when rooms are fully booked.</p></article>
           <article><h4>Cancellation</h4><p>Notify the reservation team at least 72 hours before arrival. A one-night charge applies to no-shows or late cancellations.</p></article>
         </div>
@@ -142,18 +132,17 @@ export default function InfoContent() {
           <li><strong>Fax:</strong> +82</li>
           <li><strong>Email:</strong> <a href="mailto:-@naver.com">-@naver.com</a></li>
         </ul>
-        <p className="inline-link"><a href="https://snuhoam.co.kr/stay/" {...external}>Download the temporary Hoam Faculty House reservation form <ExternalLink size={15} aria-hidden="true" /></a></p>
-
-        <h3>Other Hotels</h3>
-        <div className="table-scroll" role="region" aria-label="Other hotels near the venue" tabIndex={0}>
+        <h3>Hotels</h3>
+        <div className="table-scroll" role="region" aria-label="Hotels near the conference venue" tabIndex={0}>
           <table className="fee-table hotel-table">
-            <thead><tr><th scope="col">Hotel</th><th scope="col">Rating</th><th scope="col">Access</th><th scope="col">Estimated Rate / Night</th></tr></thead>
+            <thead><tr><th scope="col">Hotel</th><th scope="col">Rating</th><th scope="col">Access</th><th scope="col">Estimated Rate / Night</th><th scope="col">Reservation</th></tr></thead>
             <tbody>
-              <tr><th scope="row">JW Marriott Hotel Seoul</th><td>5 star</td><td>30 min by taxi</td><td>KRW 600,000–610,000</td></tr>
-              <tr><th scope="row">Four Points By Sheraton Guro</th><td>4 star</td><td>20-25 min by taxi</td><td>KRW 190,000–240,000</td></tr>
-              <tr><th scope="row">Shilla Stay Guro</th><td>3 star</td><td>20-25 min by taxi</td><td>KRW 150,000–200,000</td></tr>
-              <tr><th scope="row">Lotte City Hotel Guro</th><td>3 star</td><td>20-25 min by taxi</td><td>KRW 140,000–200,000</td></tr>
-              <tr><th scope="row">Hotel the Designers Seoul National University</th><td>3 star</td><td>17 min by bus</td><td>KRW 120,000–150,000</td></tr>
+              <tr><th scope="row">Hoam Faculty House</th><td>Guest house</td><td>On campus</td><td>KRW 71,500–82,500</td><td><a href="https://snuhoam.co.kr/stay/" {...external}>Book <ExternalLink size={14} aria-hidden="true" /></a></td></tr>
+              <tr><th scope="row">Hotel the Designers Seoul National University</th><td>3 star</td><td>17 min by bus</td><td>KRW 120,000–150,000</td><td><a href="https://www.booking.com/searchresults.html?ss=Hotel%20the%20Designers%20Seoul%20National%20University" {...external}>Book <ExternalLink size={14} aria-hidden="true" /></a></td></tr>
+              <tr><th scope="row">Lotte City Hotel Guro</th><td>3 star</td><td>20–25 min by taxi</td><td>KRW 140,000–200,000</td><td><a href="https://www.booking.com/searchresults.html?ss=Lotte%20City%20Hotel%20Guro" {...external}>Book <ExternalLink size={14} aria-hidden="true" /></a></td></tr>
+              <tr><th scope="row">Shilla Stay Guro</th><td>3 star</td><td>20–25 min by taxi</td><td>KRW 150,000–200,000</td><td><a href="https://www.booking.com/searchresults.html?ss=Shilla%20Stay%20Guro" {...external}>Book <ExternalLink size={14} aria-hidden="true" /></a></td></tr>
+              <tr><th scope="row">Four Points By Sheraton Guro</th><td>4 star</td><td>20–25 min by taxi</td><td>KRW 190,000–240,000</td><td><a href="https://www.booking.com/searchresults.html?ss=Four%20Points%20By%20Sheraton%20Guro" {...external}>Book <ExternalLink size={14} aria-hidden="true" /></a></td></tr>
+              <tr><th scope="row">JW Marriott Hotel Seoul</th><td>5 star</td><td>30 min by taxi</td><td>KRW 600,000–610,000</td><td><a href="https://www.booking.com/searchresults.html?ss=JW%20Marriott%20Hotel%20Seoul" {...external}>Book <ExternalLink size={14} aria-hidden="true" /></a></td></tr>
             </tbody>
           </table>
         </div>

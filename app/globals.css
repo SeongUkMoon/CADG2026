@@ -83,8 +83,6 @@ a:hover { color: var(--cadg-blue-dark); }
 .fee-table thead th { background: var(--cadg-blue); color: #fff; font-size: 16px; font-weight: 600; }
 .fee-table tbody th { width: 25%; background: var(--cadg-soft); color: var(--cadg-ink); font-weight: 600; }
 .fee-table tbody th span { display: block; margin-top: 2px; color: var(--cadg-copy); font-size: 14px; font-weight: 400; }
-.table-note { margin-top: 12px !important; font-size: 15px; font-style: italic; }
-
 .detail-list { margin: 0; padding-left: 23px; }
 .detail-list li { margin-bottom: 10px; padding-left: 5px; }
 .registration-cta { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 30px 34px; border-left: 4px solid var(--cadg-blue); background: var(--cadg-soft); }
@@ -124,9 +122,10 @@ a:hover { color: var(--cadg-blue-dark); }
 .recommended-badge { display: inline-flex; align-items: center; padding: 2px 7px; border-radius: 999px; background: var(--cadg-blue); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .04em; line-height: 1.5; text-transform: uppercase; }
 .inline-link { margin-top: 20px !important; }
 
-.accommodation-table tbody th { width: 28%; }
+.hotel-table { min-width: 950px; }
 .hotel-table tbody th { width: 25%; text-align: left; }
-.policy-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 28px 0 42px; }
+.hotel-table a { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.policy-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 28px 0 42px; }
 .policy-grid article { padding: 22px; border-top: 3px solid var(--cadg-blue); background: var(--cadg-soft); }
 .policy-grid h4 { margin-bottom: 10px; }
 .policy-grid p, .policy-grid ul { margin: 0; font-size: 16px; }

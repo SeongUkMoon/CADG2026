@@ -19,10 +19,10 @@ export default function RegistrationContent() {
         </p>
       </section>
 
-      {/* TODO: Replace all KRW prices and plan dates with the official CAD/Graphics 2026 fee table. */}
+      {/* TODO: Replace plan dates and fees if the official CAD/Graphics 2026 policy changes. */}
       <section className="content-block">
-        <h2>Registration Fees (KRW)</h2>
-        <div className="table-scroll" role="region" aria-label="Registration fees in Korean won" tabIndex={0}>
+        <h2>Registration Fees</h2>
+        <div className="table-scroll" role="region" aria-label="Registration fees in Korean won and US dollars" tabIndex={0}>
           <table className="fee-table">
             <thead>
               <tr>
@@ -35,48 +35,17 @@ export default function RegistrationContent() {
             <tbody>
               <tr>
                 <th scope="row" rowSpan={2}>Early-Bird<span>Through November 6</span></th>
-                <td>Full</td><td>790,000</td><td>950,000</td>
+                <td>Full</td><td>750,000 KRW / 550 USD</td><td>900,000 KRW / 660 USD</td>
               </tr>
-              <tr><td>Student</td><td>430,000</td><td>520,000</td></tr>
+              <tr><td>Student</td><td>410,000 KRW / 300 USD</td><td>490,000 KRW / 360 USD</td></tr>
               <tr>
                 <th scope="row" rowSpan={2}>Standard<span>From November 7</span></th>
-                <td>Full</td><td>880,000</td><td>1,050,000</td>
+                <td>Full</td><td>820,000 KRW / 600 USD</td><td>980,000 KRW / 720 USD</td>
               </tr>
-              <tr><td>Student</td><td>510,000</td><td>600,000</td></tr>
+              <tr><td>Student</td><td>480,000 KRW / 350 USD</td><td>580,000 KRW / 420 USD</td></tr>
             </tbody>
           </table>
         </div>
-        <p className="table-note">All prices are in South Korean won (KRW).</p>
-      </section>
-
-      {/* TODO: Replace all USD prices after the KRW fees and exchange-rate policy are finalized. */}
-      <section className="content-block">
-        <h2>Registration Fees (USD)</h2>
-        <div className="table-scroll" role="region" aria-label="Registration fees in US dollars" tabIndex={0}>
-          <table className="fee-table">
-            <thead>
-              <tr>
-                <th scope="col">Plan</th>
-                <th scope="col">Type</th>
-                <th scope="col">AsiaGraphics Member</th>
-                <th scope="col">Non AsiaGraphics Member</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" rowSpan={2}>Early-Bird<span>Through November 6</span></th>
-                <td>Full</td><td>$540</td><td>$650</td>
-              </tr>
-              <tr><td>Student</td><td>$300</td><td>$360</td></tr>
-              <tr>
-                <th scope="row" rowSpan={2}>Standard<span>From November 7</span></th>
-                <td>Full</td><td>$600</td><td>$720</td>
-              </tr>
-              <tr><td>Student</td><td>$350</td><td>$410</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p className="table-note">USD prices are provided for reference.</p>
       </section>
 
       {/* TODO: Review these author-registration rules with the CAD/Graphics 2026 committee. */}
