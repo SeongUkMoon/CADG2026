@@ -95,7 +95,6 @@ a:hover { color: var(--cadg-blue-dark); }
 .wide-figure img { display: block; width: 100%; max-height: 460px; object-fit: cover; }
 .wide-figure figcaption { margin-top: 7px; color: #8a8a8a; font-size: 14px; }
 .map-figure img { max-height: 520px; object-position: center; }
-.accommodation-figure img { max-height: 410px; }
 .tour-figure img { max-height: 720px; }
 
 .feature-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 30px 0 36px; }
@@ -110,7 +109,7 @@ a:hover { color: var(--cadg-blue-dark); }
 .icon-heading svg { width: 24px; height: 24px; color: var(--cadg-blue); }
 .travel-options { display: grid; gap: 18px; margin: 18px 0 22px; }
 .travel-options > article { padding: 26px 28px; border: 1px solid var(--cadg-line); background: var(--cadg-soft); }
-.travel-options h4, .policy-grid h4 { display: flex; align-items: center; gap: 9px; margin: 0 0 15px; color: var(--cadg-ink); font-size: 18px; }
+.travel-options h4 { display: flex; align-items: center; gap: 9px; margin: 0 0 15px; color: var(--cadg-ink); font-size: 18px; }
 .travel-options h4 svg { width: 20px; height: 20px; color: var(--cadg-blue); }
 .info-list { margin: 0; }
 .info-list > div { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 14px; padding: 6px 0; border-bottom: 1px solid #d8deea; }
@@ -125,13 +124,6 @@ a:hover { color: var(--cadg-blue-dark); }
 .hotel-table { min-width: 950px; }
 .hotel-table tbody th { width: 25%; text-align: left; }
 .hotel-table a { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
-.policy-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 28px 0 42px; }
-.policy-grid article { padding: 22px; border-top: 3px solid var(--cadg-blue); background: var(--cadg-soft); }
-.policy-grid h4 { margin-bottom: 10px; }
-.policy-grid p, .policy-grid ul { margin: 0; font-size: 16px; }
-.policy-grid ul { padding-left: 20px; }
-.contact-list { margin: 0; padding: 0; list-style: none; }
-.contact-list li { padding: 5px 0; }
 .tour-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-bottom: 30px; }
 .tour-grid article { padding: 24px; border: 1px solid var(--cadg-line); }
 .tour-grid h3 { margin: 0 0 12px; font-size: 20px; }
@@ -156,7 +148,7 @@ a:hover { color: var(--cadg-blue-dark); }
   .content-block h2 { font-size: 26px; }
   .registration-cta { align-items: flex-start; flex-direction: column; padding: 26px 24px; }
   .primary-link { width: 100%; justify-content: center; }
-  .feature-grid, .policy-grid, .tour-grid { grid-template-columns: 1fr; }
+  .feature-grid, .tour-grid { grid-template-columns: 1fr; }
   .info-list > div { grid-template-columns: 1fr; gap: 0; }
   .travel-options > article { padding: 22px 20px; }
   .wide-figure img { min-height: 220px; }

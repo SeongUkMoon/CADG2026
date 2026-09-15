@@ -111,28 +111,12 @@ export default function InfoContent() {
 
       {/* ================================================================
           TODO: ACCOMMODATION
-          Replace hotel rates, availability notes, contact details, and
-          reservation links with final CAD/Graphics 2026 information.
+          Replace hotel rates and reservation links with final
+          CAD/Graphics 2026 information.
           ================================================================ */}
       <section className="content-block" id="accommodation">
         <h2>Accommodation</h2>
-        <h3 className="icon-heading"><BedDouble aria-hidden="true" /> Hoam Faculty House</h3>
-        <p>Hoam Faculty House is located in Building 125 at Seoul National University.</p>
-        <figure className="wide-figure accommodation-figure">
-          <img src={withSiteBasePath('/images/hoam_faculty_house.webp')} alt="Guest room at Hoam Faculty House" />
-          <figcaption>Hoam Faculty House guest accommodation</figcaption>
-        </figure>
-        <div className="policy-grid">
-          <article><h4>Availability</h4><p>Approximately 40 rooms are available. Reservations may close early when rooms are fully booked.</p></article>
-          <article><h4>Cancellation</h4><p>Notify the reservation team at least 72 hours before arrival. A one-night charge applies to no-shows or late cancellations.</p></article>
-        </div>
-        <h3>Accommodation Inquiries</h3>
-        <ul className="contact-list">
-          <li><strong>Telephone:</strong> +82</li>
-          <li><strong>Fax:</strong> +82</li>
-          <li><strong>Email:</strong> <a href="mailto:-@naver.com">-@naver.com</a></li>
-        </ul>
-        <h3>Hotels</h3>
+        <h3 className="icon-heading"><BedDouble aria-hidden="true" /> Hotels</h3>
         <div className="table-scroll" role="region" aria-label="Hotels near the conference venue" tabIndex={0}>
           <table className="fee-table hotel-table">
             <thead><tr><th scope="col">Hotel</th><th scope="col">Rating</th><th scope="col">Access</th><th scope="col">Estimated Rate / Night</th><th scope="col">Reservation</th></tr></thead>
