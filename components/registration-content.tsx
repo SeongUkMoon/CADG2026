@@ -48,16 +48,15 @@ export default function RegistrationContent() {
         </div>
       </section>
 
-      {/* TODO: Review these author-registration rules with the CAD/Graphics 2026 committee. */}
       <section className="content-block">
         <h2>Important Notes</h2>
         <ul className="detail-list">
-          <li>Every accepted journal paper, poster paper, and technical brief must have at least one Full registration by the early-bird registration deadline.</li>
-          <li>Author registration per paper must be completed under the regular registration category. Student registration cannot be accepted as author registration.</li>
-          <li>Both Full and Student registration provide access to all sessions.</li>
-          <li>Student ID cards will be required on site as evidence for the reduced student fee.</li>
-          <li>Accommodation and travel are not included in the registration fee.</li>
-          <li>To become a new AsiaGraphics member or reactivate your membership, visit the <a href="http://www.asiagraphics.org/membership/" target="_blank" rel="noreferrer">AsiaGraphics membership page</a>.</li>
+          <li>At least one Full registration per paper must be completed. Therefore, even if the sole author is a student, Full registration is still required per paper.</li>
+          <li>Both Full and Student registrations grant access to all sessions.</li>
+          <li>Student ID cards may be required on site for student registrants.</li>
+          <li>Accommodation or travel is not included.</li>
+          <li>AsiaGraphics membership: <a href="http://www.asiagraphics.org/membership/" target="_blank" rel="noreferrer">Visit site</a></li>
+          <li>Contact: <a href="mailto:cad-graphics-2026@googlegroups.com">cad-graphics-2026@googlegroups.com</a></li>
         </ul>
       </section>
 
@@ -72,14 +71,13 @@ export default function RegistrationContent() {
         </a>
       </section>
 
-      {/* TODO: Confirm the official cancellation deadline and refund percentage. */}
       <section className="content-block">
         <h2>Terms and Conditions</h2>
-        <h3>Cancellation Policy</h3>
-        <p>70% of the registration fee will be refunded if cancellation is made by November 6, 2026.</p>
-        <p>After this date, regrettably, cancellations are not permitted.</p>
-        <h3>Substitution Policy</h3>
-        <p>Registrations are transferable if the original registrant is unable to attend; however, the conference committee generally cannot assist in finding a replacement.</p>
+        <p>Please take a moment to review the terms and conditions for this event.</p>
+        <ul className="detail-list">
+          <li><strong>Cancellation Policy:</strong> 70% refund for cancellations on or before November 6, 2026. No refunds thereafter.</li>
+          <li><strong>Substitution Policy:</strong> Registrations are transferable; the committee cannot assist in finding replacements.</li>
+        </ul>
       </section>
     </ConferenceShell>
   );
