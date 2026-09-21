@@ -55,7 +55,7 @@ export default function InfoContent() {
         </ul>
       </section>
 
-      {/* TODO: Update airport routes, fares, visa requirements, and dates shortly before publication. */}
+      {/* TODO: Update airport routes, fares, and dates shortly before publication. */}
       <section className="content-block" id="transportation">
         <h2>Transportation &amp; Travel</h2>
         <h3 className="icon-heading"><Plane aria-hidden="true" /> Airport Transfer</h3>
@@ -99,11 +99,21 @@ export default function InfoContent() {
 
         <h3>Visa &amp; Entry</h3>
         <ul className="detail-list">
-          <li>K-ETA may be required for travelers from visa-free countries. Apply at least 72 hours before departure.</li>
-          <li><a href="https://www.k-eta.go.kr/" {...external}>Korea Electronic Travel Authorization (K-ETA)</a></li>
-          <li><a href="https://www.visa.go.kr/" {...external}>Korea Visa Portal</a></li>
-          <li><a href="https://www.mofa.go.kr/" {...external}>Ministry of Foreign Affairs</a></li>
-          <li><a href="https://english.visitkorea.or.kr/" {...external}>Visit Korea Tourist Information</a></li>
+          <li>
+            For anyone who requires a visa letter or related supporting documents, <strong>please complete your registration first and indicate during registration that you require visa assistance. We will contact you separately with further instructions.</strong> If you did not indicate this request during registration, please contact us directly at the email address below.
+            <ul>
+              <li><a href="mailto:uu6202@imo.snu.ac.kr">uu6202@imo.snu.ac.kr</a></li>
+            </ul>
+          </li>
+          <li>
+            K-ETA may be required for travelers from visa-free countries. Apply at least 72 hours before departure.
+            <ul>
+              <li><a href="https://www.k-eta.go.kr/" {...external}>Korea Electronic Travel Authorization (K-ETA)</a></li>
+              <li><a href="https://www.visa.go.kr/" {...external}>Korea Visa Portal</a></li>
+              <li><a href="https://www.mofa.go.kr/" {...external}>Ministry of Foreign Affairs</a></li>
+              <li><a href="https://english.visitkorea.or.kr/" {...external}>Visit Korea Tourist Information</a></li>
+            </ul>
+          </li>
         </ul>
 
         <h3>Local Transportation</h3>
