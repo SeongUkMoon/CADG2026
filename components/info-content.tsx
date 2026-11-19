@@ -55,40 +55,6 @@ export default function InfoContent() {
         </ul>
       </section>
 
-      <section className="content-block" id="hoam-to-venue">
-        <h2>Hoam Faculty House → Conference Venue</h2>
-        <p>Guests staying at Hoam Faculty House can reach the Global Education Center for Engineers (Building 38) by local bus, campus shuttle, or on foot.</p>
-        <div className="travel-options">
-          <article>
-            <h4><Bus aria-hidden="true" /> Gwanak 02-1 Bus + Walk</h4>
-            <dl className="info-list">
-              <div className="recommended-route">
-                <dt>Route <span className="recommended-badge">Recommended</span></dt>
-                <dd>Board Gwanak 02-1 at the Hoam Faculty House stop toward the SNU campus → Get off at the Research Institute of Advanced Materials → Walk to the Global Education Center for Engineers (Building 38).</dd>
-              </div>
-              <div><dt>Tip</dt><dd>Confirm that the bus is heading into the campus before boarding.</dd></div>
-            </dl>
-          </article>
-          <article>
-            <h4><Bus aria-hidden="true" /> Campus Shuttle + Walk</h4>
-            <dl className="info-list">
-              <div><dt>Route</dt><dd>Board the Hoam-route reverse-direction campus shuttle at Hoam Faculty House → Get off at the Research Institute of Advanced Materials → Walk to the Global Education Center for Engineers (Building 38).</dd></div>
-              <div><dt>Schedule</dt><dd>Service frequency varies by time of day and academic calendar. Check the official SNU shuttle schedule before departure.</dd></div>
-            </dl>
-          </article>
-          <article>
-            <h4><Footprints aria-hidden="true" /> Walk</h4>
-            <dl className="info-list">
-              <div><dt>Route</dt><dd>Hoam Faculty House (Building 125) → Family Housing and dormitory area → Engineering College area → Global Education Center for Engineers (Building 38).</dd></div>
-              <div><dt>Note</dt><dd>The campus is hilly. Allow extra time and check the campus map before setting out, especially in poor weather.</dd></div>
-            </dl>
-          </article>
-        </div>
-        <p className="inline-link"><a href="https://en.snu.ac.kr/about/campus/gwanak/transportation" {...external}>SNU public transportation guide <ExternalLink size={15} aria-hidden="true" /></a></p>
-        <p className="inline-link"><a href="https://en.snu.ac.kr/about/campus/gwanak/shuttles" {...external}>SNU campus shuttle information <ExternalLink size={15} aria-hidden="true" /></a></p>
-        <p className="inline-link"><a href="https://map.snu.ac.kr/web/main.action" {...external}>SNU campus map <ExternalLink size={15} aria-hidden="true" /></a></p>
-      </section>
-
       {/* TODO: Update airport routes, fares, and dates shortly before publication. */}
       <section className="content-block" id="transportation">
         <h2>Transportation &amp; Travel</h2>
@@ -130,6 +96,38 @@ export default function InfoContent() {
           </article>
         </div>
         <p className="inline-link"><a href="https://www.rome2rio.com/map/Incheon-Airport-ICN/Hoam-Faculty-House?accom_comparison=true" {...external}>Compare airport transfer options on Rome2Rio <ExternalLink size={15} aria-hidden="true" /></a></p>
+
+        <h3 id="hoam-to-venue">Hoam Faculty House → Conference Venue</h3>
+        <p>Guests staying at Hoam Faculty House can reach the Global Education Center for Engineers (Building 38) by local bus, campus shuttle, or on foot.</p>
+        <div className="travel-options">
+          <article>
+            <h4><Bus aria-hidden="true" /> Gwanak 02-1 Bus + Walk</h4>
+            <dl className="info-list">
+              <div className="recommended-route">
+                <dt>Route <span className="recommended-badge">Recommended</span></dt>
+                <dd>Board Gwanak 02-1 at the Hoam Faculty House stop toward the SNU campus → Get off at the Research Institute of Advanced Materials → Walk to the Global Education Center for Engineers (Building 38).</dd>
+              </div>
+              <div><dt>Tip</dt><dd>Confirm that the bus is heading into the campus before boarding.</dd></div>
+            </dl>
+          </article>
+          <article>
+            <h4><Bus aria-hidden="true" /> Campus Shuttle + Walk</h4>
+            <dl className="info-list">
+              <div><dt>Route</dt><dd>Board the Hoam-route reverse-direction campus shuttle at Hoam Faculty House → Get off at the Research Institute of Advanced Materials → Walk to the Global Education Center for Engineers (Building 38).</dd></div>
+              <div><dt>Schedule</dt><dd>Service frequency varies by time of day and academic calendar. Check the official SNU shuttle schedule before departure.</dd></div>
+            </dl>
+          </article>
+          <article>
+            <h4><Footprints aria-hidden="true" /> Walk</h4>
+            <dl className="info-list">
+              <div><dt>Route</dt><dd>Hoam Faculty House (Building 125) → Family Housing and dormitory area → Engineering College area → Global Education Center for Engineers (Building 38).</dd></div>
+              <div><dt>Note</dt><dd>The campus is hilly. Allow extra time and check the campus map before setting out, especially in poor weather.</dd></div>
+            </dl>
+          </article>
+        </div>
+        <p className="inline-link"><a href="https://en.snu.ac.kr/about/campus/gwanak/transportation" {...external}>SNU public transportation guide <ExternalLink size={15} aria-hidden="true" /></a></p>
+        <p className="inline-link"><a href="https://en.snu.ac.kr/about/campus/gwanak/shuttles" {...external}>SNU campus shuttle information <ExternalLink size={15} aria-hidden="true" /></a></p>
+        <p className="inline-link"><a href="https://map.snu.ac.kr/web/main.action" {...external}>SNU campus map <ExternalLink size={15} aria-hidden="true" /></a></p>
 
         <h3>Visa &amp; Entry</h3>
         <ul className="detail-list">
