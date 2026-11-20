@@ -117,9 +117,9 @@ export default function InfoContent() {
           <article>
             <h4><Bus aria-hidden="true" /> 2. Campus Shuttle + Walk</h4>
             <dl className="info-list">
-              <div><dt>Route</dt><dd>Board the Hoam-route reverse-direction campus shuttle at Hoam Faculty House → Get off at the Research Institute of Advanced Materials → Walk to the Global Education Center for Engineers (Building 38).</dd></div>
-              <div><dt>Duration</dt><dd>Approximately 20 minutes, including the final walk</dd></div>
-              <div><dt>Schedule</dt><dd>Service frequency varies by time of day and academic calendar. Check the official SNU shuttle schedule before departure.</dd></div>
+              <div><dt>Route</dt><dd>Walk to the Hoam Faculty House campus shuttle stop → Board SNU On-Campus Circulation Shuttle Route 2 (clockwise) → Get off at the Second Engineering Building → Walk to the Global Education Center for Engineers (Building 38).</dd></div>
+              <div><dt>Duration</dt><dd>Approximately 25–30 minutes, excluding shuttle waiting time</dd></div>
+              <div><dt>Schedule</dt><dd>Year-round, 09:50–17:10, at 30–60 minute intervals. Check the official SNU shuttle schedule before departure.</dd></div>
             </dl>
             <CampusRouteMap route="shuttle" />
           </article>
@@ -128,17 +128,17 @@ export default function InfoContent() {
             <dl className="info-list">
               <div className="recommended-route">
                 <dt>Route <span className="recommended-badge">Recommended</span></dt>
-                <dd>Board Gwanak 02-1 at the Hoam Faculty House stop toward the SNU campus → Get off at the Research Institute of Advanced Materials → Walk to the Global Education Center for Engineers (Building 38).</dd>
+                <dd>Walk to the Hoam Faculty House stop (21882) → Board Gwanak 02-1 toward Seoul National University New Engineering Building → Ride 10 stops and get off at Advanced Materials → Walk to the Global Education Center for Engineers (Building 38).</dd>
               </div>
               <div><dt>Duration</dt><dd>Approximately 20 minutes, including the final walk</dd></div>
-              <div><dt>Tip</dt><dd>Confirm that the bus is heading into the campus before boarding.</dd></div>
+              <div><dt>Tip</dt><dd>Confirm the destination “서울대신공학관” before boarding.</dd></div>
             </dl>
             <CampusRouteMap route="bus" />
             <p className="route-note"><CreditCard aria-hidden="true" /><span>Before using the local bus, obtain a Korean transportation card such as Tmoney or EZL. Cards can be purchased and reloaded at convenience stores and subway stations. <a href="https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?vcontsId=140663" {...external}>Transportation card guide <ExternalLink size={14} aria-hidden="true" /></a></span></p>
           </article>
         </div>
         <p className="inline-link"><a href="https://en.snu.ac.kr/about/campus/gwanak/transportation" {...external}>SNU public transportation guide <ExternalLink size={15} aria-hidden="true" /></a></p>
-        <p className="inline-link"><a href="https://en.snu.ac.kr/about/campus/gwanak/shuttles" {...external}>SNU campus shuttle information <ExternalLink size={15} aria-hidden="true" /></a></p>
+        <p className="inline-link"><a href="https://snu.ac.kr/about/gwanak/shuttles/campus_shuttles" {...external}>SNU campus shuttle information <ExternalLink size={15} aria-hidden="true" /></a></p>
         <p className="inline-link"><a href="https://map.snu.ac.kr/web/main.action" {...external}>SNU campus map <ExternalLink size={15} aria-hidden="true" /></a></p>
         <p className="route-taxi-note"><Car aria-hidden="true" /> For a direct ride, you can also use Uber or Kakao T from Hoam Faculty House to Building 38.</p>
 
@@ -167,7 +167,7 @@ export default function InfoContent() {
           <li><strong>Bus:</strong> Airport bus 6017 and local buses Gwanak 02-1, Gwanak 02-2, 5511, 5513, 5516.</li>
           <li><strong>Taxi:</strong> Kakao T is recommended and offers an English interface. Uber is available in limited areas.</li>
           <li><strong>Map apps:</strong> <a href="https://naver.me/FtTxWBu5" {...external}>Naver Map</a> and <a href="https://kko.to/9KgYXPsnMt" {...external}>KakaoMap</a>.</li>
-          <li><strong>Detailed guides:</strong> <a href="https://en.snu.ac.kr/about/campus/gwanak/transportation" {...external}>Public transportation</a> and <a href="https://en.snu.ac.kr/about/campus/gwanak/shuttles" {...external}>campus shuttle buses</a>.</li>
+          <li><strong>Detailed guides:</strong> <a href="https://en.snu.ac.kr/about/campus/gwanak/transportation" {...external}>Public transportation</a> and <a href="https://snu.ac.kr/about/gwanak/shuttles/campus_shuttles" {...external}>campus shuttle buses</a>.</li>
         </ul>
       </section>
 

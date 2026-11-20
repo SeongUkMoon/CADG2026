@@ -29,8 +29,10 @@ type RouteDefinition = {
 };
 
 const hoam: LatLngTuple = [37.46764, 126.96014];
+const hoamTransitStop: LatLngTuple = [37.4682578, 126.9578128];
 const dormitoryArea: LatLngTuple = [37.46153, 126.95657];
-const advancedMaterials: LatLngTuple = [37.45356, 126.95022];
+const advancedMaterials: LatLngTuple = [37.4534963, 126.9502262];
+const secondEngineeringStop: LatLngTuple = [37.448669, 126.952023];
 const venue: LatLngTuple = [37.45486, 126.95054];
 const incheonAirportT1: LatLngTuple = [37.46019, 126.4407];
 const hongikUniversity: LatLngTuple = [37.55736, 126.92507];
@@ -187,8 +189,125 @@ const campusVehiclePath: LatLngTuple[] = [
   advancedMaterials,
 ];
 
-const shuttlePath = campusVehiclePath;
-const busPath = campusVehiclePath;
+const hoamToTransitStopWalk: LatLngTuple[] = [
+  hoam,
+  [37.467515, 126.959882],
+  [37.467831, 126.959642],
+  [37.467682, 126.959215],
+  [37.467617, 126.959045],
+  [37.467611, 126.958923],
+  [37.467638, 126.958815],
+  [37.467675, 126.958741],
+  [37.467735, 126.958667],
+  [37.467801, 126.958652],
+  [37.467873, 126.957968],
+  [37.46789, 126.957807],
+  hoamTransitStop,
+];
+
+// Gwanak 02-1 follows the campus road past the dormitories before turning
+// west toward the Advanced Materials stop.
+const busPath: LatLngTuple[] = [hoamTransitStop, ...campusVehiclePath.slice(10)];
+
+// SNU On-Campus Circulation Shuttle Route 2 (clockwise) continues south from
+// the dormitory area to the Second Engineering Building instead of turning
+// toward Advanced Materials.
+const shuttlePath: LatLngTuple[] = [
+  hoamTransitStop,
+  ...campusVehiclePath.slice(10, 36),
+  [37.460142, 126.957002],
+  [37.459953, 126.957096],
+  [37.459827, 126.95714],
+  [37.459704, 126.957182],
+  [37.459597, 126.95721],
+  [37.45947, 126.957207],
+  [37.459328, 126.957168],
+  [37.459184, 126.957084],
+  [37.458585, 126.956663],
+  [37.458442, 126.956609],
+  [37.458257, 126.956547],
+  [37.457515, 126.956353],
+  [37.457331, 126.956297],
+  [37.457124, 126.956199],
+  [37.456965, 126.956078],
+  [37.456831, 126.955947],
+  [37.455989, 126.955211],
+  [37.455025, 126.954507],
+  [37.454484, 126.954122],
+  [37.454291, 126.953991],
+  [37.454214, 126.953938],
+  [37.453795, 126.953634],
+  [37.45368, 126.953572],
+  [37.453384, 126.953379],
+  [37.453247, 126.953341],
+  [37.452066, 126.952797],
+  [37.451806, 126.952678],
+  [37.45176, 126.952657],
+  [37.451305, 126.95245],
+  [37.451225, 126.952413],
+  [37.451058, 126.952352],
+  [37.450995, 126.952315],
+  [37.450965, 126.952301],
+  [37.450803, 126.952208],
+  [37.450607, 126.952071],
+  [37.450478, 126.951992],
+  [37.450445, 126.951986],
+  [37.450289, 126.951969],
+  [37.449973, 126.951977],
+  [37.449545, 126.951986],
+  [37.449273, 126.951996],
+  [37.449075, 126.952008],
+  [37.448904, 126.952013],
+  [37.448855, 126.952013],
+  secondEngineeringStop,
+];
+
+const secondEngineeringWalk: LatLngTuple[] = [
+  secondEngineeringStop,
+  [37.448691, 126.952719],
+  [37.449088, 126.952712],
+  [37.449069, 126.952164],
+  [37.449193, 126.95208],
+  [37.449539, 126.952072],
+  [37.450161, 126.952051],
+  [37.450354, 126.952081],
+  [37.450473, 126.952102],
+  [37.450843, 126.952269],
+  [37.451056, 126.952377],
+  [37.451305, 126.95245],
+  [37.45176, 126.952657],
+  [37.452066, 126.952797],
+  [37.452103, 126.952662],
+  [37.452213, 126.952226],
+  [37.452329, 126.952097],
+  [37.45245, 126.952029],
+  [37.452596, 126.952043],
+  [37.452966, 126.952141],
+  [37.453205, 126.95213],
+  [37.453567, 126.952087],
+  [37.453668, 126.952079],
+  [37.453746, 126.951988],
+  [37.453789, 126.951911],
+  [37.453832, 126.951821],
+  [37.453876, 126.951691],
+  [37.453918, 126.95149],
+  [37.453929, 126.951312],
+  [37.453937, 126.95105],
+  [37.453939, 126.95072],
+  [37.453944, 126.950409],
+  [37.453973, 126.950303],
+  [37.454045, 126.950278],
+  [37.454115, 126.950257],
+  [37.454276, 126.950208],
+  [37.454508, 126.950138],
+  [37.454916, 126.950002],
+  [37.455052, 126.949995],
+  [37.4551, 126.950081],
+  [37.455143, 126.950492],
+  [37.455184, 126.950527],
+  [37.455089, 126.950545],
+  venue,
+];
 
 const shortWalk: LatLngTuple[] = [
   advancedMaterials,
@@ -282,29 +401,33 @@ const routes: Record<RouteKind, RouteDefinition> = {
     segments: [{ positions: walkingPath, color: '#34784e', dashArray: '8 7', label: 'Walking route' }],
   },
   shuttle: {
-    ariaLabel: 'Interactive campus map showing the shuttle route from Hoam Faculty House and the final walk to Building 38',
-    caption: 'Approximate shuttle and walking route shown on OpenStreetMap. Check the current SNU shuttle schedule before departure.',
+    ariaLabel: 'Interactive campus map showing SNU On-Campus Circulation Shuttle Route 2 from Hoam Faculty House to the Second Engineering Building and the walk to Building 38',
+    caption: 'Approximate SNU On-Campus Circulation Shuttle Route 2 (clockwise) and walking route shown on OpenStreetMap. Check the current SNU shuttle schedule before departure.',
     markers: [
-      { position: hoam, label: '1. Hoam Faculty House', detail: 'Board the reverse-direction campus shuttle.', direction: 'top' },
-      { position: advancedMaterials, label: '2. Advanced Materials', detail: 'Get off the shuttle.', direction: 'left' },
-      { position: venue, label: '3. Building 38', detail: 'Walk to the conference venue.', direction: 'right' },
+      { position: hoam, label: '1. Hoam Faculty House', detail: 'Walk to the nearby campus shuttle stop.', direction: 'top' },
+      { position: hoamTransitStop, label: '2. Hoam shuttle stop', detail: 'Board On-Campus Circulation Shuttle Route 2 (clockwise).', direction: 'right' },
+      { position: secondEngineeringStop, label: '3. Second Engineering Building', detail: 'Get off the shuttle and continue on foot.', direction: 'left' },
+      { position: venue, label: '4. Building 38', detail: 'Global Education Center for Engineers.', direction: 'right' },
     ],
     segments: [
-      { positions: shuttlePath, color: '#694fa3', label: 'Campus shuttle' },
-      { positions: shortWalk, color: '#34784e', dashArray: '8 7', label: 'Walk' },
+      { positions: hoamToTransitStopWalk, color: '#34784e', dashArray: '8 7', label: 'Walk to shuttle stop' },
+      { positions: shuttlePath, color: '#694fa3', label: 'SNU Shuttle Route 2' },
+      { positions: secondEngineeringWalk, color: '#34784e', dashArray: '8 7', label: 'Walk to Building 38' },
     ],
   },
   bus: {
     ariaLabel: 'Interactive campus map showing the Gwanak 02-1 bus route from Hoam Faculty House and the final walk to Building 38',
     caption: 'Approximate Gwanak 02-1 and walking route shown on OpenStreetMap. Confirm the bus direction before boarding.',
     markers: [
-      { position: hoam, label: '1. Hoam Faculty House', detail: 'Board Gwanak 02-1 toward the SNU campus.', direction: 'top' },
-      { position: advancedMaterials, label: '2. Advanced Materials', detail: 'Get off the bus.', direction: 'left' },
-      { position: venue, label: '3. Building 38', detail: 'Walk to the conference venue.', direction: 'right' },
+      { position: hoam, label: '1. Hoam Faculty House', detail: 'Walk to the nearby Gwanak 02-1 stop.', direction: 'top' },
+      { position: hoamTransitStop, label: '2. Hoam Faculty House stop', detail: 'Stop 21882: board toward Seoul National University New Engineering Building.', direction: 'right' },
+      { position: advancedMaterials, label: '3. Advanced Materials', detail: 'Get off after 10 stops.', direction: 'left' },
+      { position: venue, label: '4. Building 38', detail: 'Walk to the conference venue.', direction: 'right' },
     ],
     segments: [
+      { positions: hoamToTransitStopWalk, color: '#34784e', dashArray: '8 7', label: 'Walk to bus stop' },
       { positions: busPath, color: '#193889', label: 'Gwanak 02-1' },
-      { positions: shortWalk, color: '#34784e', dashArray: '8 7', label: 'Walk' },
+      { positions: shortWalk, color: '#34784e', dashArray: '8 7', label: 'Walk to Building 38' },
     ],
   },
   limousine: {
