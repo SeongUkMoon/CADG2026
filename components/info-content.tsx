@@ -1,5 +1,5 @@
 import { BedDouble, BookOpen, Bus, Car, CreditCard, ExternalLink, Footprints, Mountain, Plane, Train } from 'lucide-react';
-import { CampusRouteMap } from '@/components/campus-route-map';
+import { AirportRouteMap, CampusRouteMap } from '@/components/campus-route-map';
 import { ConferenceShell } from '@/components/conference-shell';
 import { withSiteBasePath } from '@/lib/site-path';
 
@@ -73,6 +73,7 @@ export default function InfoContent() {
               <div><dt>Fare</dt><dd>KRW 16,000–17,500</dd></div>
               <div><dt>Boarding</dt><dd>Terminal 1 B1, Bus Stop No. 6</dd></div>
             </dl>
+            <AirportRouteMap route="limousine" />
           </article>
           <article>
             <h4><Train aria-hidden="true" /> AREX + Subway + Bus</h4>
@@ -86,6 +87,7 @@ export default function InfoContent() {
               <div><dt>Duration</dt><dd>Approximately 2 hours</dd></div>
               <div><dt>Fare</dt><dd>KRW 5,500–7,500</dd></div>
             </dl>
+            <AirportRouteMap route="arex" />
           </article>
           <article>
             <h4>Taxi or Private Car</h4>
@@ -94,6 +96,7 @@ export default function InfoContent() {
               <div><dt>Car service</dt><dd>Approximately KRW 75,000–95,000</dd></div>
               <div><dt>Travel time</dt><dd>Approximately 1 hour</dd></div>
             </dl>
+            <AirportRouteMap route="taxi" />
           </article>
         </div>
         <p className="inline-link"><a href="https://www.rome2rio.com/map/Incheon-Airport-ICN/Hoam-Faculty-House?accom_comparison=true" {...external}>Compare airport transfer options on Rome2Rio <ExternalLink size={15} aria-hidden="true" /></a></p>
