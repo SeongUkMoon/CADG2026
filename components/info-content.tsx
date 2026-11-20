@@ -72,8 +72,10 @@ export default function InfoContent() {
               <div><dt>Duration</dt><dd>85–90 minutes</dd></div>
               <div><dt>Fare</dt><dd>KRW 16,000–17,500</dd></div>
               <div><dt>Boarding</dt><dd>Terminal 1 B1, Bus Stop No. 6</dd></div>
+              <div><dt>Ticket</dt><dd>Purchase a ticket at an airport bus ticket counter before boarding Bus 6017.</dd></div>
             </dl>
             <AirportRouteMap route="limousine" />
+            <p className="route-note"><CreditCard aria-hidden="true" /><span>A Korean transportation card such as Tmoney or EZL is required for the Gwanak 02-1 local bus after arriving at Hoam Faculty House. Cards can be purchased and reloaded at convenience stores and subway stations. <a href="https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?vcontsId=140663" {...external}>Transportation card guide <ExternalLink size={14} aria-hidden="true" /></a></span></p>
           </article>
           <article>
             <h4><Train aria-hidden="true" /> AREX + Subway + Bus</h4>
@@ -88,6 +90,7 @@ export default function InfoContent() {
               <div><dt>Fare</dt><dd>KRW 5,500–7,500</dd></div>
             </dl>
             <AirportRouteMap route="arex" />
+            <p className="route-note"><CreditCard aria-hidden="true" /><span>A Korean transportation card such as Tmoney or EZL is required when using the subway and local buses. Cards can be purchased and reloaded at convenience stores and subway stations. <a href="https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?vcontsId=140663" {...external}>Transportation card guide <ExternalLink size={14} aria-hidden="true" /></a></span></p>
           </article>
           <article>
             <h4>Taxi or Private Car</h4>
