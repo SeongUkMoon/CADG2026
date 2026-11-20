@@ -109,6 +109,7 @@ export default function InfoContent() {
             <h4><Footprints aria-hidden="true" /> 1. Walk</h4>
             <dl className="info-list">
               <div><dt>Route</dt><dd>Hoam Faculty House (Building 125) → Family Housing and dormitory area → Engineering College area → Global Education Center for Engineers (Building 38).</dd></div>
+              <div><dt>Duration</dt><dd>Approximately 37 minutes</dd></div>
               <div><dt>Note</dt><dd>The campus is hilly. Allow extra time and check the campus map before setting out, especially in poor weather.</dd></div>
             </dl>
             <CampusRouteMap route="walk" />
@@ -117,6 +118,7 @@ export default function InfoContent() {
             <h4><Bus aria-hidden="true" /> 2. Campus Shuttle + Walk</h4>
             <dl className="info-list">
               <div><dt>Route</dt><dd>Board the Hoam-route reverse-direction campus shuttle at Hoam Faculty House → Get off at the Research Institute of Advanced Materials → Walk to the Global Education Center for Engineers (Building 38).</dd></div>
+              <div><dt>Duration</dt><dd>Approximately 20 minutes, including the final walk</dd></div>
               <div><dt>Schedule</dt><dd>Service frequency varies by time of day and academic calendar. Check the official SNU shuttle schedule before departure.</dd></div>
             </dl>
             <CampusRouteMap route="shuttle" />
@@ -128,6 +130,7 @@ export default function InfoContent() {
                 <dt>Route <span className="recommended-badge">Recommended</span></dt>
                 <dd>Board Gwanak 02-1 at the Hoam Faculty House stop toward the SNU campus → Get off at the Research Institute of Advanced Materials → Walk to the Global Education Center for Engineers (Building 38).</dd>
               </div>
+              <div><dt>Duration</dt><dd>Approximately 20 minutes, including the final walk</dd></div>
               <div><dt>Tip</dt><dd>Confirm that the bus is heading into the campus before boarding.</dd></div>
             </dl>
             <CampusRouteMap route="bus" />
