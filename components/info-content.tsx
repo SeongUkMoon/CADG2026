@@ -117,10 +117,10 @@ export default function InfoContent() {
           <article>
             <h4><Bus aria-hidden="true" /> 2. Campus Shuttle + Walk</h4>
             <dl className="info-list">
-              <div><dt>Route</dt><dd>Walk to the Hoam Faculty House campus shuttle stop → Board the yellow Hoam reverse-direction campus shuttle → Stay on the shuttle past the Second Engineering Building turnaround → Get off at Engineering College Entrance (공대입구, stop 6A) → Walk to the Global Education Center for Engineers (Building 38).</dd></div>
-              <div><dt>Duration</dt><dd>Approximately 25–30 minutes, excluding shuttle waiting time</dd></div>
+              <div><dt>Route</dt><dd>Walk to the Hoam Faculty House campus shuttle stop → Board the yellow Hoam reverse-direction campus shuttle → Follow the outer campus road past Faculty Club, the Computer Research Institute, and the Semiconductor Research Institute → Get off at Advanced Materials (신소재) → Walk to the Global Education Center for Engineers (Building 38).</dd></div>
+              <div><dt>Duration</dt><dd>Approximately 20–25 minutes, excluding shuttle waiting time</dd></div>
               <div><dt>Vehicle</dt><dd>Look for a small yellow campus shuttle bus.</dd></div>
-              <div><dt>Getting off</dt><dd>Tell the driver in advance that you need to get off at Engineering College Entrance (공대입구).</dd></div>
+              <div><dt>Getting off</dt><dd>Tell the driver in advance that you need to get off at Advanced Materials (신소재).</dd></div>
               <div><dt>Schedule</dt><dd>Year-round, 09:50–17:10. Service is generally every 20 minutes, with some 40–60 minute midday gaps. Check the official SNU shuttle schedule before departure.</dd></div>
             </dl>
             <CampusRouteMap route="shuttle" />

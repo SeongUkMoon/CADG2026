@@ -32,7 +32,6 @@ const hoam: LatLngTuple = [37.46764, 126.96014];
 const hoamTransitStop: LatLngTuple = [37.4682578, 126.9578128];
 const dormitoryArea: LatLngTuple = [37.46153, 126.95657];
 const advancedMaterials: LatLngTuple = [37.4534963, 126.9502262];
-const secondEngineeringStop: LatLngTuple = [37.4487952, 126.9520773];
 const venue: LatLngTuple = [37.45486, 126.95054];
 const incheonAirportT1: LatLngTuple = [37.46019, 126.4407];
 const hongikUniversity: LatLngTuple = [37.55736, 126.92507];
@@ -130,10 +129,8 @@ const hoamToTransitStopWalk: LatLngTuple[] = [
   hoamTransitStop,
 ];
 
-// Gwanak 02-1 road geometry follows every official stop between Hoam Faculty
-// House and Advanced Materials, including the Outdoor Auditorium roundabout
-// and the Joint Instruments Center / engineering research road.
-const busPath: LatLngTuple[] = [
+// Both services follow the campus road from Hoam to Gwanaksan Intersection.
+const hoamToGwanaksanIntersection: LatLngTuple[] = [
   [37.468259, 126.957852],
   [37.466573, 126.957701],
   [37.466226, 126.957705],
@@ -147,6 +144,11 @@ const busPath: LatLngTuple[] = [
   [37.461178, 126.956357],
   [37.460941, 126.956553],
   [37.460288, 126.956911],
+];
+
+// The 02-1 turns into Beodeulgol, loops around the turnaround, retraces the
+// access road to Gwanaksan Intersection, and then joins the outer campus road.
+const beodeulgolTurnaround: LatLngTuple[] = [
   [37.460137, 126.956706],
   [37.459114, 126.955655],
   [37.458906, 126.955393],
@@ -160,83 +162,39 @@ const busPath: LatLngTuple[] = [
   [37.458859, 126.955228],
   [37.458885, 126.955132],
   [37.458861, 126.955068],
-  [37.459248, 126.954704],
-  [37.459275, 126.954453],
-  [37.458836, 126.953346],
-  [37.458252, 126.952619],
-  [37.457173, 126.952137],
-  [37.457079, 126.952145],
-  [37.457134, 126.952218],
-  [37.457677, 126.952509],
-  [37.457863, 126.952681],
-  [37.457799, 126.95281],
-  [37.457733, 126.952871],
-  [37.456819, 126.953214],
-  [37.4567, 126.953337],
-  [37.456128, 126.953472],
-  [37.4559, 126.953574],
-  [37.45576, 126.953603],
-  [37.455615, 126.953568],
-  [37.455539, 126.95367],
-  [37.455392, 126.953742],
-  [37.455025, 126.954507],
-  [37.453795, 126.953634],
-  [37.453384, 126.953379],
-  [37.453246, 126.95283],
-  [37.453273, 126.952571],
-  [37.453354, 126.952344],
-  [37.453689, 126.951957],
-  [37.453771, 126.951824],
-  [37.453849, 126.951599],
-  [37.45388, 126.951282],
-  [37.453881, 126.950233],
-  [37.453498, 126.950267],
+  [37.458844, 126.955243],
+  [37.458906, 126.955393],
+  [37.459114, 126.955655],
+  [37.460137, 126.956706],
+  [37.460288, 126.956911],
 ];
 
-// The yellow 25-seat Hoam reverse-direction shuttle continues beyond the
-// Second Engineering Building turnaround and returns to Engineering College
-// Entrance, where visitors should request their stop from the driver.
-const shuttlePath: LatLngTuple[] = [
-  [37.468259, 126.957852],
-  [37.466573, 126.957701],
-  [37.466226, 126.957705],
-  [37.464865, 126.957824],
-  [37.464643, 126.957915],
-  [37.464011, 126.958042],
-  [37.463098, 126.957811],
-  [37.462782, 126.957673],
-  [37.461819, 126.956718],
-  [37.461413, 126.956514],
-  [37.461178, 126.956357],
-  [37.460941, 126.956553],
-  [37.460288, 126.956911],
-  [37.459927, 126.956481],
-  [37.459114, 126.955655],
-  [37.458906, 126.955393],
-  [37.458844, 126.955243],
-  [37.458884, 126.955171],
-  [37.458861, 126.955068],
-  [37.459248, 126.954704],
-  [37.459275, 126.954453],
-  [37.458836, 126.953346],
-  [37.458252, 126.952619],
-  [37.457173, 126.952137],
-  [37.457079, 126.952145],
-  [37.457134, 126.952218],
-  [37.457677, 126.952509],
-  [37.457863, 126.952681],
-  [37.457799, 126.95281],
-  [37.457733, 126.952871],
-  [37.456819, 126.953214],
-  [37.4567, 126.953337],
-  [37.456128, 126.953472],
-  [37.4559, 126.953574],
-  [37.45576, 126.953603],
-  [37.455615, 126.953568],
-  [37.455539, 126.95367],
-  [37.455392, 126.953742],
+// Shared outer road past Faculty Club, the Computer Research Institute, and
+// the Semiconductor Research Institute, ending at Advanced Materials.
+const outerResearchRoad: LatLngTuple[] = [
+  [37.460142, 126.957002],
+  [37.459953, 126.957096],
+  [37.459827, 126.95714],
+  [37.459704, 126.957182],
+  [37.459597, 126.95721],
+  [37.45947, 126.957207],
+  [37.459328, 126.957168],
+  [37.459184, 126.957084],
+  [37.458585, 126.956663],
+  [37.458442, 126.956609],
+  [37.458257, 126.956547],
+  [37.457515, 126.956353],
+  [37.457331, 126.956297],
+  [37.457124, 126.956199],
+  [37.456965, 126.956078],
+  [37.456831, 126.955947],
+  [37.455989, 126.955211],
   [37.455025, 126.954507],
+  [37.454484, 126.954122],
+  [37.454291, 126.953991],
+  [37.454214, 126.953938],
   [37.453795, 126.953634],
+  [37.45368, 126.953572],
   [37.453384, 126.953379],
   [37.453293, 126.953086],
   [37.453246, 126.95283],
@@ -247,44 +205,18 @@ const shuttlePath: LatLngTuple[] = [
   [37.453849, 126.951599],
   [37.45388, 126.951282],
   [37.453881, 126.950233],
-  [37.452637, 126.950324],
-  [37.451849, 126.949976],
-  [37.450902, 126.949799],
-  [37.450712, 126.949788],
-  [37.449994, 126.94985],
-  [37.449629, 126.949823],
-  [37.449209, 126.949687],
-  [37.44814, 126.949194],
-  [37.44784, 126.949162],
-  [37.44758, 126.949266],
-  [37.447444, 126.949382],
-  [37.447282, 126.949677],
-  [37.447063, 126.950843],
-  [37.447068, 126.951066],
-  [37.447124, 126.951377],
-  [37.447223, 126.95158],
-  [37.447394, 126.951796],
-  [37.447544, 126.95192],
-  [37.447761, 126.952021],
-  [37.448062, 126.952042],
-  [37.450289, 126.951969],
-  [37.450478, 126.951992],
-  [37.451058, 126.952352],
-  [37.453247, 126.953341],
-  [37.453384, 126.953379],
-  [37.453246, 126.95283],
-  [37.453273, 126.952571],
-  [37.453354, 126.952344],
-  [37.453689, 126.951957],
-  [37.453771, 126.951824],
-  [37.453849, 126.951599],
-  [37.45388, 126.951282],
-  [37.453881, 126.950233],
-  [37.456483, 126.949438],
-  [37.456443, 126.949336],
-  [37.456393, 126.949289],
-  [37.455876, 126.949332],
-  engineeringCollegeEntrance,
+  [37.453498, 126.950267],
+];
+
+const shuttlePath: LatLngTuple[] = [
+  ...hoamToGwanaksanIntersection,
+  ...outerResearchRoad,
+];
+
+const busPath: LatLngTuple[] = [
+  ...hoamToGwanaksanIntersection,
+  ...beodeulgolTurnaround,
+  ...outerResearchRoad,
 ];
 
 const shortWalk: LatLngTuple[] = [
@@ -398,19 +330,18 @@ const routes: Record<RouteKind, RouteDefinition> = {
     segments: [{ positions: walkingPath, color: '#34784e', dashArray: '8 7', label: 'Walking route' }],
   },
   shuttle: {
-    ariaLabel: 'Interactive campus map showing the yellow Hoam reverse-direction shuttle from Hoam Faculty House, through the Second Engineering Building turnaround, to Engineering College Entrance and the walk to Building 38',
-    caption: 'Approximate yellow Hoam reverse-direction shuttle and walking route shown on OpenStreetMap. Stay aboard past the Second Engineering Building turnaround and ask the driver to stop at Engineering College Entrance.',
+    ariaLabel: 'Interactive campus map showing the yellow Hoam reverse-direction shuttle from Hoam Faculty House along the outer campus road to Advanced Materials and the walk to Building 38',
+    caption: 'Approximate yellow Hoam reverse-direction shuttle and walking route shown on OpenStreetMap. The shuttle follows the outer campus road; ask the driver to let you off at Advanced Materials.',
     markers: [
       { position: hoam, label: '1. Hoam Faculty House', detail: 'Walk to the nearby campus shuttle stop.', direction: 'top' },
       { position: hoamTransitStop, label: '2. Hoam shuttle stop', detail: 'Board the yellow Hoam reverse-direction shuttle.', direction: 'right' },
-      { position: secondEngineeringStop, label: '3. Second Engineering turnaround', detail: 'Remain on board as the shuttle continues around the turnaround.', direction: 'left' },
-      { position: engineeringCollegeEntrance, label: '4. Engineering College Entrance', detail: 'Ask the driver to let you off here.', direction: 'left' },
-      { position: venue, label: '5. Building 38', detail: 'Walk to the Global Education Center for Engineers.', direction: 'right' },
+      { position: advancedMaterials, label: '3. Advanced Materials', detail: 'Tell the driver in advance that you need to get off here.', direction: 'left' },
+      { position: venue, label: '4. Building 38', detail: 'Walk to the Global Education Center for Engineers.', direction: 'right' },
     ],
     segments: [
       { positions: hoamToTransitStopWalk, color: '#34784e', dashArray: '8 7', label: 'Walk to shuttle stop' },
       { positions: shuttlePath, color: '#694fa3', label: 'Hoam reverse-direction shuttle' },
-      { positions: engineeringCollegeWalk, color: '#34784e', dashArray: '8 7', label: 'Walk to Building 38' },
+      { positions: shortWalk, color: '#34784e', dashArray: '8 7', label: 'Walk to Building 38' },
     ],
   },
   bus: {
