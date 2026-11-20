@@ -1,4 +1,4 @@
-import { BedDouble, BookOpen, Bus, Car, CreditCard, ExternalLink, Footprints, Mountain, Plane, Train } from 'lucide-react';
+import { BedDouble, BookOpen, Bus, Car, CreditCard, ExternalLink, Footprints, MapPinned, Mountain, Plane, Train } from 'lucide-react';
 import { AirportRouteMap, CampusRouteMap } from '@/components/campus-route-map';
 import { ConferenceShell } from '@/components/conference-shell';
 import { withSiteBasePath } from '@/lib/site-path';
@@ -103,6 +103,7 @@ export default function InfoContent() {
 
         <h3 id="hoam-to-venue">Hoam Faculty House → Conference Venue</h3>
         <p>Guests staying at Hoam Faculty House can reach the Global Education Center for Engineers (Building 38) by local bus, campus shuttle, or on foot.</p>
+        <p className="route-note"><MapPinned aria-hidden="true" /><span>These maps provide approximate route guidance and may not precisely reflect every walkway, stop, or temporary access change. For more accurate turn-by-turn directions, check <a href="https://maps.app.goo.gl/wwksviQf5pEKq6pB7" {...external}>Google Maps <ExternalLink size={14} aria-hidden="true" /></a>, <a href="https://naver.me/FtTxWBu5" {...external}>Naver Map <ExternalLink size={14} aria-hidden="true" /></a>, or <a href="https://kko.to/9KgYXPSnMt" {...external}>KakaoMap <ExternalLink size={14} aria-hidden="true" /></a> before departure.</span></p>
         <div className="travel-options">
           <article>
             <h4><Footprints aria-hidden="true" /> 1. Walk</h4>
