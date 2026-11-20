@@ -1,4 +1,5 @@
 import { BedDouble, BookOpen, Bus, Car, CreditCard, ExternalLink, Footprints, Mountain, Plane, Train } from 'lucide-react';
+import { CampusRouteMap } from '@/components/campus-route-map';
 import { ConferenceShell } from '@/components/conference-shell';
 import { withSiteBasePath } from '@/lib/site-path';
 
@@ -106,15 +107,7 @@ export default function InfoContent() {
               <div><dt>Route</dt><dd>Hoam Faculty House (Building 125) → Family Housing and dormitory area → Engineering College area → Global Education Center for Engineers (Building 38).</dd></div>
               <div><dt>Note</dt><dd>The campus is hilly. Allow extra time and check the campus map before setting out, especially in poor weather.</dd></div>
             </dl>
-            <figure className="route-map-figure">
-              <div className="route-map route-map--walk" role="img" aria-label="Walking route from Hoam Faculty House through the family housing and dormitory area to the Global Education Center for Engineers">
-                <div className="route-map-stop"><span className="route-map-marker">1</span><strong>Hoam Faculty House</strong><small>Building 125</small></div>
-                <div className="route-map-stop"><span className="route-map-marker">2</span><strong>Family Housing</strong><small>Follow the campus path</small></div>
-                <div className="route-map-stop"><span className="route-map-marker">3</span><strong>Dormitory Area</strong><small>Continue toward Engineering</small></div>
-                <div className="route-map-stop"><span className="route-map-marker">4</span><strong>Conference Venue</strong><small>Building 38</small></div>
-              </div>
-              <figcaption>Simplified walking route — not to scale.</figcaption>
-            </figure>
+            <CampusRouteMap route="walk" />
           </article>
           <article>
             <h4><Bus aria-hidden="true" /> 2. Campus Shuttle + Walk</h4>
@@ -122,14 +115,7 @@ export default function InfoContent() {
               <div><dt>Route</dt><dd>Board the Hoam-route reverse-direction campus shuttle at Hoam Faculty House → Get off at the Research Institute of Advanced Materials → Walk to the Global Education Center for Engineers (Building 38).</dd></div>
               <div><dt>Schedule</dt><dd>Service frequency varies by time of day and academic calendar. Check the official SNU shuttle schedule before departure.</dd></div>
             </dl>
-            <figure className="route-map-figure">
-              <div className="route-map route-map--shuttle" role="img" aria-label="Campus shuttle route from Hoam Faculty House to the Research Institute of Advanced Materials followed by a walk to the conference venue">
-                <div className="route-map-stop"><span className="route-map-marker">1</span><strong>Hoam Faculty House</strong><small>Board the campus shuttle</small></div>
-                <div className="route-map-stop"><span className="route-map-marker">2</span><strong>Advanced Materials</strong><small>Get off the shuttle</small></div>
-                <div className="route-map-stop"><span className="route-map-marker">3</span><strong>Conference Venue</strong><small>Walk to Building 38</small></div>
-              </div>
-              <figcaption>Simplified shuttle-and-walk route — not to scale.</figcaption>
-            </figure>
+            <CampusRouteMap route="shuttle" />
           </article>
           <article>
             <h4><Bus aria-hidden="true" /> 3. Gwanak 02-1 Bus + Walk</h4>
@@ -140,14 +126,7 @@ export default function InfoContent() {
               </div>
               <div><dt>Tip</dt><dd>Confirm that the bus is heading into the campus before boarding.</dd></div>
             </dl>
-            <figure className="route-map-figure">
-              <div className="route-map route-map--bus" role="img" aria-label="Gwanak 02-1 bus route from Hoam Faculty House to the Research Institute of Advanced Materials followed by a walk to the conference venue">
-                <div className="route-map-stop"><span className="route-map-marker">1</span><strong>Hoam Faculty House</strong><small>Board Gwanak 02-1</small></div>
-                <div className="route-map-stop"><span className="route-map-marker">2</span><strong>Advanced Materials</strong><small>Get off the bus</small></div>
-                <div className="route-map-stop"><span className="route-map-marker">3</span><strong>Conference Venue</strong><small>Walk to Building 38</small></div>
-              </div>
-              <figcaption>Simplified bus-and-walk route — not to scale.</figcaption>
-            </figure>
+            <CampusRouteMap route="bus" />
             <p className="route-note"><CreditCard aria-hidden="true" /><span>Before using the local bus, obtain a Korean transportation card such as Tmoney or EZL. Cards can be purchased and reloaded at convenience stores and subway stations. <a href="https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?vcontsId=140663" {...external}>Transportation card guide <ExternalLink size={14} aria-hidden="true" /></a></span></p>
           </article>
         </div>
