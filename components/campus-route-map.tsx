@@ -360,18 +360,20 @@ const routes: Record<RouteKind, RouteDefinition> = {
     ],
   },
   limousine: {
-    ariaLabel: 'Interactive map showing the airport limousine and local bus route from Incheon Airport Terminal 1 to Building 38',
-    caption: 'Approximate recommended route shown on OpenStreetMap. Confirm the current 6017 timetable and boarding platform before departure.',
+    ariaLabel: 'Interactive map showing Airport Limousine 6017 from Incheon Airport Terminal 1 to Hoam Faculty House, the walk to the Gwanak 02-1 stop, and the local bus route to Building 38',
+    caption: 'Approximate recommended route shown on OpenStreetMap. From Hoam Faculty House, walk to stop 21882 and follow the same Gwanak 02-1 route shown in the Hoam-to-venue section. Confirm the current 6017 timetable and boarding platform before departure.',
     markers: [
       { position: incheonAirportT1, label: '1. Incheon Airport T1', detail: 'Board Airport Limousine Bus 6017.', direction: 'right' },
-      { position: hoam, label: '2. Hoam Faculty House', detail: 'Transfer to Gwanak 02-1 toward the SNU campus.', direction: 'right' },
-      { position: advancedMaterials, label: '3. Advanced Materials', detail: 'Get off the local bus and continue on foot.', direction: 'left' },
-      { position: venue, label: '4. Building 38', detail: 'Global Education Center for Engineers.', direction: 'right' },
+      { position: hoam, label: '2. Hoam Faculty House', detail: 'Get off bus 6017 and walk to the nearby Gwanak 02-1 stop.', direction: 'right' },
+      { position: hoamTransitStop, label: '3. Hoam Faculty House stop', detail: 'Stop 21882: board Gwanak 02-1 toward Seoul National University New Engineering Building.', direction: 'right' },
+      { position: advancedMaterials, label: '4. Advanced Materials', detail: 'Get off the local bus and continue on foot.', direction: 'left' },
+      { position: venue, label: '5. Building 38', detail: 'Global Education Center for Engineers.', direction: 'right' },
     ],
     segments: [
       { positions: airportLimousinePath, color: '#c35a1d', label: 'Airport Limousine 6017' },
+      { positions: hoamToTransitStopWalk, color: '#34784e', dashArray: '8 7', label: 'Walk to Gwanak 02-1 stop' },
       { positions: busPath, color: '#193889', label: 'Gwanak 02-1' },
-      { positions: shortWalk, color: '#34784e', dashArray: '8 7', label: 'Walk' },
+      { positions: shortWalk, color: '#34784e', dashArray: '8 7', label: 'Walk to Building 38' },
     ],
   },
   arex: {

@@ -66,7 +66,7 @@ export default function InfoContent() {
             <dl className="info-list">
               <div className="recommended-route">
                 <dt>Route <span className="recommended-badge">Recommended</span></dt>
-                <dd>Incheon Airport Terminal 1 → Hoam Faculty House → Gwanak 02-1 (Green Bus) → Get off the Research Institute of Advanced Materials → Global Education Center for Engineers</dd>
+                <dd>Incheon Airport Terminal 1 → Airport Limousine 6017 → Get off at Hoam Faculty House → Walk to Hoam Faculty House stop (21882) → Gwanak 02-1 (Green Bus) → Get off at Advanced Materials → Walk to the Global Education Center for Engineers</dd>
               </div>
               <div><dt>Interval</dt><dd>Every 30 minutes</dd></div>
               <div><dt>Duration</dt><dd>85–90 minutes</dd></div>
