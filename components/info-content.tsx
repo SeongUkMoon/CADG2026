@@ -112,8 +112,9 @@ export default function InfoContent() {
             <h4><Footprints aria-hidden="true" /> 1. Walk</h4>
             <dl className="info-list">
               <div><dt>Route</dt><dd>Hoam Faculty House (Building 125) → Family Housing and dormitory area → Engineering College area → Global Education Center for Engineers (Building 38).</dd></div>
-              <div><dt>Duration</dt><dd>Approximately 37 minutes</dd></div>
-              <div><dt>Note</dt><dd>The campus is hilly. Allow extra time and check the campus map before setting out, especially in poor weather.</dd></div>
+              <div><dt>Duration</dt><dd>Approximately 30 minutes</dd></div>
+              <div><dt>Cost</dt><dd>Free</dd></div>
+              <div><dt>Tip</dt><dd>The route includes some hilly sections. Please allow extra time and check the campus map before setting out, especially in poor weather.</dd></div>
             </dl>
             <CampusRouteMap route="walk" />
           </article>
@@ -121,9 +122,10 @@ export default function InfoContent() {
             <h4><Bus aria-hidden="true" /> 2. Campus Shuttle + Walk</h4>
             <dl className="info-list">
               <div><dt>Route</dt><dd>Walk to the Hoam Faculty House campus shuttle stop → Board the yellow Hoam reverse-direction campus shuttle → Follow the outer campus road past Faculty Club, the Computer Research Institute, and the Semiconductor Research Institute → Get off at Advanced Materials (신소재) → Walk to the Global Education Center for Engineers (Building 38).</dd></div>
-              <div><dt>Duration</dt><dd>Approximately 20–25 minutes, excluding shuttle waiting time</dd></div>
+              <div><dt>Duration</dt><dd>Approximately 20 minutes</dd></div>
+              <div><dt>Cost</dt><dd>Free</dd></div>
               <div><dt>Vehicle</dt><dd>Look for a small yellow campus shuttle bus.</dd></div>
-              <div><dt>Getting off</dt><dd>Tell the driver in advance that you need to get off at Advanced Materials (신소재).</dd></div>
+              <div><dt>Tip</dt><dd>You should tell the driver in advance that you need to get off at Advanced Materials (신소재).</dd></div>
               <div><dt>Schedule</dt><dd>Year-round, 09:50–17:10. Service is generally every 20 minutes, with some 40–60 minute midday gaps. Check the official SNU shuttle schedule before departure.</dd></div>
             </dl>
             <CampusRouteMap route="shuttle" />
@@ -135,7 +137,8 @@ export default function InfoContent() {
                 <dt>Route <span className="recommended-badge">Recommended</span></dt>
                 <dd>Walk to the Hoam Faculty House stop (21882) → Board Gwanak 02-1 toward Seoul National University New Engineering Building → Ride 10 stops and get off at Advanced Materials → Walk to the Global Education Center for Engineers (Building 38).</dd>
               </div>
-              <div><dt>Duration</dt><dd>Approximately 20 minutes, including the final walk</dd></div>
+              <div><dt>Duration</dt><dd>Approximately 20 minutes</dd></div>
+              <div><dt>Cost</dt><dd>Paid (local bus fare; transportation card required)</dd></div>
               <div><dt>Tip</dt><dd>Confirm the destination “서울대신공학관” before boarding.</dd></div>
             </dl>
             <CampusRouteMap route="bus" />
