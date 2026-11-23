@@ -137,7 +137,7 @@ export default function InfoContent() {
                 <dd>Walk to the Hoam Faculty House stop (21882) → Board Gwanak 02-1 toward Seoul National University New Engineering Building → Ride 10 stops and get off at Advanced Materials → Walk to the Global Education Center for Engineers (Building 38).</dd>
               </div>
               <div><dt>Duration</dt><dd>Approximately 20 minutes</dd></div>
-              <div><dt>Cost</dt><dd>Paid (local bus fare; transportation card required)</dd></div>
+              <div><dt>Cost</dt><dd>1 USD (ONE WAY)</dd></div>
               <div><dt>Tip</dt><dd>Confirm the destination “서울대신공학관” before boarding.</dd></div>
             </dl>
             <CampusRouteMap route="bus" />
