@@ -113,7 +113,6 @@ export default function InfoContent() {
             <dl className="info-list">
               <div><dt>Route</dt><dd>Hoam Faculty House (Building 125) → Family Housing and dormitory area → Engineering College area → Global Education Center for Engineers (Building 38).</dd></div>
               <div><dt>Duration</dt><dd>Approximately 30 minutes</dd></div>
-              <div><dt>Cost</dt><dd>Free</dd></div>
               <div><dt>Tip</dt><dd>The route includes some hilly sections. Please allow extra time and check the campus map before setting out, especially in poor weather.</dd></div>
             </dl>
             <CampusRouteMap route="walk" />
